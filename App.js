@@ -1,10 +1,13 @@
 import React, {Component} from 'react';
-import {Text} from 'react-native';
+import {Image} from 'react-native';
 
 export default class HelloWorldApp extends Component {
   render() {
+    const pic = {
+      uri: "https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg"
+    }
     return (
-        <Text>Hello World</Text>
+      <Image source={pic} style={{width: 193, height: 110}} />
     );
   }
 }
