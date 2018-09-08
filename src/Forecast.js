@@ -9,10 +9,10 @@ export default class Forecast extends Component {
             {this.props.main}
           </Text>
           <Text style={styles.mainText}>
-            Current conditions: {this.props.description}
+            {this.props.description}
           </Text>
           <Text style={styles.bigText}>
-            {this.props.temp}°C
+            {this.props.temp}
           </Text>
         </View>
     );
